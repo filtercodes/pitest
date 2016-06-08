@@ -6,7 +6,7 @@ VC=/opt/vc
 #VC := /opt/raspberry/sysroot/vc
 
 INCLUDES := -I$(VC)/include -I$(VC)/include/interface/vcos/pthreads -I$(VC)/include/interface/vmcs_host/linux
-LIBS := -L$(VC)/lib -lGLESv2 -lEGL -lbcm_host -lvchiq_arm -lvcos
+LIBS := -L$(VC)/lib -lGLESv2 -lEGL -lbcm_host -lvchiq_arm -lvcos -lpthread
 
 all : pitest
 
